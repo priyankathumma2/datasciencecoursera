@@ -1,13 +1,6 @@
 # Exploratory Data Analysis Project 2 (JHU) Coursera
 
-Unzipping and Loading Files
-----------
-```R
-library("data.table")
-path <- getwd()
-download.file(url = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
-              , destfile = paste(path, "dataFiles.zip", sep = "/"))
-unzip(zipfile = "dataFiles.zip")
+
 
 SCC <- data.table::as.data.table(x = readRDS(file = "Source_Classification_Code.rds"))
 NEI <- data.table::as.data.table(x = readRDS(file = "summarySCC_PM25.rds"))
@@ -104,7 +97,7 @@ dev.off()
 
 Question 5 ([plot5.R](https://github.com/mGalarnyk/datasciencecoursera/blob/master/4_Exploratory_Data_Analysis/project2/plot5.R))
 ----------
-How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
+How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?x
 
 ```R
 # Gather the subset of the NEI data which corresponds to vehicles
